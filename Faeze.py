@@ -25,4 +25,4 @@ def overall_cta(year):
     plt.annotate("The Drastic Fall \n from 1990",(1993,460000000),textcoords="offset points",xytext=(-100,-70),arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"),fontsize=15)
     plt.annotate("UBER began its \n operations in Chicago",(2012,545000000),textcoords="offset points",xytext=(-30,+70),arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"),fontsize=15)
     plt.annotate("Multiple Service \n Cuts",(2010,516000000),textcoords="offset points",xytext=(0,-70),arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"),fontsize=15)
-    return(ax)
+    return(ax1)
