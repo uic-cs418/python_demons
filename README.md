@@ -6,3 +6,5 @@ Kindly add the code to the current directory and all the necessary dataset to th
 Dataset: https://data.cityofchicago.org/Transportation/CTA-List-of-CTA-Datasets/pnau-cf66  
 
 Git Commands can be found here: https://git-scm.com/docs  
+
+loss.py contains function to calculate the Absolute Percentage Error (APE) based on the true and predicted values.  
