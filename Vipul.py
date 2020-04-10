@@ -66,8 +66,6 @@ def gasvsbus(gas,year_df):
     plt.xlabel('\n Years', fontsize =15)
     plt.ylabel('GAS - Price in $/gallon \n Bus - Ridership in 100 Million ', fontsize =15)
     plt.show()
-    month_sum = monthly.groupby(['year','month'],as_index= False).sum()
-    month_sum['date'] = pd.to_datetime(month_sum[['year', 'month']].assign(DAY=1))
     return(ax)
 
 
