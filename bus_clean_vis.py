@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-monthly = pd.read_csv("Bus_monthly(weekday,weekend,total).csv")
+monthly = pd.read_csv("data\\Bus_monthly(weekday,weekend,total).csv")
 
 def clean(monthly):
     # Adding Year to the file
