@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-monthly = pd.read_csv("Bus_monthly(weekday,weekend,total).csv")
-gas = pd.read_csv('gas.csv')
+monthly = pd.read_csv("data\\Bus_monthly(weekday,weekend,total).csv")
+gas = pd.read_csv('data\\gas.csv')
 
 
 def gasvsbus(gas,monthly):
