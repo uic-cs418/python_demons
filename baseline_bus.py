@@ -20,4 +20,4 @@ def baseline(monthly):
         accuracy = ((abs(real[i]- prediction[i]))/real[i])*100
         accuracy = 100 - accuracy
         avg_accuracy = ((avg_accuracy*i) + accuracy)/(i+1)
-    print('The accuracy for baseline model of mean is: ' + str(round(avg_accuracy, 2)) + '%')
+    return avg_accuracy
