@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-monthly = pd.read_csv("data\\Bus_monthly(weekday,weekend,total).csv")
-gas = pd.read_csv('data\\gas.csv')
+monthly = pd.read_csv("Bus_monthly(weekday,weekend,total).csv")
+gas = pd.read_csv('gas.csv')
 
 
 def gasvsbus(gas,monthly):
@@ -26,12 +26,12 @@ def gasvsbus(gas,monthly):
     x = year_df.year
     plt.xticks(x,fontsize =12)
     plt.yticks(fontsize = 12)
-    fig.set_size_inches(12.5, 6.5)
+    fig.set_size_inches(10, 5)
     fig.savefig('2.png', dpi=100)
     plt.xlim(2000,2019.5)
     plt.ylim(1,4.5)
     plt.grid(color='gray', linestyle='-', linewidth=.3)
-    plt.legend(loc= 'center right',title = "Correlation b/w Gas Price and Ridership",labels = ['Gas Price','Bus Ridership'],bbox_to_anchor=(1, .9),fontsize = 16)
+    plt.legend(loc= 'lower right',title = "Correlation b/w Gas Price and Ridership",labels = ['Gas Price','Bus Ridership'],fontsize = 16)
     plt.title('Correlation Between Gas Prices in Chicago \n vs. CTA Bus Ridership ',loc='center',fontsize = 18,color = 'darkblue')
     plt.xlabel('\n Years', fontsize =15)
     plt.ylabel('GAS - Price in $/gallon \n Bus - Ridership in 100 Million ', fontsize =15)

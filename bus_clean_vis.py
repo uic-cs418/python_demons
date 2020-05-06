@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-monthly = pd.read_csv("data\\Bus_monthly(weekday,weekend,total).csv")
+monthly = pd.read_csv("Bus_monthly(weekday,weekend,total).csv")
 
 def clean(monthly):
     # Adding Year to the file
@@ -82,14 +82,14 @@ def polar_vertex(monthly):
     fig = plt.gcf()
     plt.xticks(fontsize =12,rotation='horizontal')
     plt.yticks(fontsize = 12)
-    fig.set_size_inches(14.5, 8.5)
+    fig.set_size_inches(10, 4)
     fig.savefig('test1png.png', dpi=100)
     plt.ylim(0,12)
     plt.title('Ridership Percentage for January \n out of total ridership in the year ',loc='center',fontsize = 18,color = 'darkblue')
     plt.xlabel('\n X-axis : Years', fontsize =15)
     plt.ylabel('Y-axis : Ridership (in Perecent %) \n ', fontsize =15)
     plt.annotate("Heavy Snowing w.r.t. Decemeber",(13,7.45),clip_on=True,textcoords="offset points",xytext=(-140,+50),arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2",color = 'black'),fontsize=15)
-    plt.annotate("Polar Vertex",(18,7.3),textcoords="offset points",xytext=(-75,+50),arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2",color = 'black'),fontsize=15)
+    plt.annotate("Polar Vertex",(18,7.43),textcoords="offset points",xytext=(-75,+30),arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2",color = 'black'),fontsize=15)
     return (ax)
 
 def Overall_graph_bus(monthly):
@@ -99,7 +99,7 @@ def Overall_graph_bus(monthly):
     x = year_df.year
     plt.xticks(x,fontsize =12)
     plt.yticks(fontsize = 12)
-    fig.set_size_inches(12.5, 6.5)
+    fig.set_size_inches(10, 5)
     fig.savefig('1.png', dpi=100)
     plt.grid(color='gray', linestyle='-', linewidth=.5)
     plt.xlim(2000,2019.5)

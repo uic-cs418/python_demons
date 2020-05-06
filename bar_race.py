@@ -10,8 +10,5 @@ def bar_race(monthly):
     # routes
     temp1.columns = temp1.columns.get_level_values(1)
     temp1 = temp1.reset_index()
-    display(temp1)
     temp1.to_csv('bar_race.csv', index=False)
-    race_df = race_df.loc[race_df["routename"].isin(routes)]
-    race_df.to_csv('bar_race.csv', index=False)
-    return race_df
+    return temp1
